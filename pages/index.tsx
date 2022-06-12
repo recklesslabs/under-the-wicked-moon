@@ -241,7 +241,7 @@ const Home: NextPage = () => {
 
                         let [craniumStatus, stallionStatus] = JSON.parse(JSON.stringify(res))
 
-                        if(!craniumStatus || !stallionStatus) {
+                        if(craniumStatus || stallionStatus) {
                           notifications.showNotification({
                             title: `One of more tokens are claimed or invalid!`,
                             message: "You cannot mint them!",

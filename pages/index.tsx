@@ -174,7 +174,7 @@ const Home: NextPage = () => {
       <Center>
         <Box style={{ width: "500px" }} sx={boxTheme(theme)}>
           <div>
-          <h2>Mint "Under The Wicked Moon"</h2>
+          <h2>Mint <i>Under The Wicked Moon</i></h2>
               {account && (
                 <p>
                   <a

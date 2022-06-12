@@ -81,7 +81,6 @@ const Home: NextPage = () => {
   useEffect(() => {
     if (connector !== undefined) {
       setOpened(false);
-      console.log(account)
     }
   }, [connector]);
 

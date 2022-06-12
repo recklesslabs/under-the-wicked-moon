@@ -1,0 +1,35 @@
+{
+  "name": "utwm-dapp",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@ethersproject/providers": "^5.5.3",
+    "@ethersproject/units": "^5.5.0",
+    "@mantine/core": "^3.6.11",
+    "@mantine/hooks": "^3.6.11",
+    "@mantine/next": "^3.6.11",
+    "@mantine/notifications": "^3.6.11",
+    "@web3-react/core": "^6.1.9",
+    "@web3-react/injected-connector": "^6.0.7",
+    "@web3-react/walletconnect-connector": "^6.2.13",
+    "@web3-react/walletlink-connector": "^6.2.12",
+    "ethers": "^5.5.4",
+    "next": "12.1.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "tabler-icons-react": "^1.37.0"
+  },
+  "devDependencies": {
+    "@types/node": "17.0.21",
+    "@types/react": "17.0.39",
+    "eslint": "8.10.0",
+    "eslint-config-next": "12.1.0",
+    "typescript": "4.5.5"
+  }
+}

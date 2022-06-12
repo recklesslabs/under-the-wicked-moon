@@ -106,17 +106,18 @@ const Home: NextPage = () => {
             <h2>Under The Wicked Moon</h2>
 
             {account ? (
-              <Button onClick={() => deactivate()}>Disconnect Wallet</Button>
+              <Button color="gray" onClick={() => deactivate()}>Disconnect Wallet</Button>
             ) : (
-              <Button onClick={() => setOpened(true)}>Connect Wallet</Button>
+              <Button color="gray" onClick={() => setOpened(true)}>Connect Wallet</Button>
             )}
           </div>
         </Header>
       }
     >
       <div>
-      {/* <Image height={"100%"} width={"100%"} src="/Banner.png" /> */}
-      </div>
+      
+      
+      </div >
       <Modal centered opened={opened} onClose={() => setOpened(false)} hideCloseButton>
         <Box
           onClick={() => {
@@ -170,8 +171,10 @@ const Home: NextPage = () => {
           </div>
         </Box>
       </Modal>
-
+      
       <Center>
+        
+        
         <Box style={{ width: "500px" }} sx={boxTheme(theme)}>
           <div>
           <h2>Mint <i>Under The Wicked Moon</i></h2>
@@ -198,7 +201,7 @@ const Home: NextPage = () => {
               </div>
               <br />
               <p>
-                <Button
+                <Button color="gray"
                   onClick={() => {
                     let signer: any = library.getSigner(account) as any;
                     const contract = new ethers.Contract(contractAddress, contractABI, signer);
@@ -228,7 +231,7 @@ const Home: NextPage = () => {
                   Mint UTWM
                 </Button>
                 &nbsp; &nbsp;
-                <Button
+                <Button color="gray"
                   onClick={() => {
                     let signer: any = library.getSigner(account) as any;
                     const contract = new ethers.Contract(contractAddress, contractABI, signer);
@@ -265,6 +268,7 @@ const Home: NextPage = () => {
                   Check Tokens
                 </Button>
               </p>
+              
           </div>
         
         </Box>
